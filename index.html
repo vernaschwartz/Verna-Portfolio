@@ -11,24 +11,31 @@
     
         <!-- Theme CSS -->
         <link rel="stylesheet" href="css/style.css">
+        
+              
     
         <title>Verna's Portfolio</title>
     </head>
     <header>               
-        <nav class="navbar fixed-top bg-dark navbar-light header">
-            <a href="#hero" class="navbar-brand" style="color:white; background-color: #343a40; opacity: .7; font-size: 25px;">Verna Schwartz</a>
-            <div class="header-right">
-                <a class="nav-item nav-link active" href="#hero">Home</a>
-                <a class="nav-item nav-link" href="#about">About Me</a>
-                <a class="nav-item nav-link" href="#skills">My Skills</a>
-                <a class="nav-item nav-link" href="#mywork">My Work</a>
-            </div>
-        </nav>
+            <nav class="navbar fixed-top navbar-expand-lg">
+                    <a href="#hero" class="navbar-brand" style="font-size: 25px;">Verna Schwartz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="#hero">Home</a>
+                            <a class="nav-item nav-link" href="#about">About Me</a>
+                            <a class="nav-item nav-link" href="#aboveskills">My Skills</a>
+                            <a class="nav-item nav-link" href="#mywork">My Work</a>
+                        </div>
+                    </div>
+                </nav>
     </header>
     <body>
 
         <!--Hero Section-->
-        <section id="hero" style="background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url('img/goldengate.jpg')no-repeat center center;
+        <section id="hero" style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('img/goldengate.jpg')no-repeat center center;
         background-size: cover;">
             <div class="container">
                 <div class="row">
@@ -63,7 +70,7 @@
                         <p><strong>Certification: </strong>Microsoft Word</p>
                         <p><strong>Year Obtained: </strong>2013</p> <hr>
                         <p><strong>Certification: </strong>Microsoft PowerPoint</p>
-                        <p><strong>Year Obtained: </strong>2013</p><hr>
+                        <p id="aboveskills"><strong>Year Obtained: </strong>2013</p><hr>
                         
 
                     </div>
@@ -85,25 +92,25 @@
                         
                     </div>
                     <div class="col-md-3">
-                        <p>PHP (2 years)</p>
+                        <p>PHP</p>
                     </div>
                     <div class="col-md-3">
-                        <p>MYSQL (2 years)</p>
+                        <p>MYSQL</p>
                     </div>
                     <div class="col-md-3">
-                        <p>JAVASCRIPT (2 years)</p>
+                        <p>JAVASCRIPT</p>
                     </div>
                     <div class="col-md-3">
-                        <p>CSS (3 years)</p>
+                        <p>CSS</p>
                     </div>
                     <div class="col-md-3">
-                        <p>SASS (less than 1 year)</p>
+                        <p>SASS</p>
                     </div>
                     <div class="col-md-3">
-                        <p>WordPress (less than 1 year)</p>
+                        <p>WordPress</p>
                     </div>
                     <div class="col-md-3">
-                        <p>Bootstrap (less than 1 year)</p>
+                        <p>Bootstrap</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +131,7 @@
                                 <img class="content-image" src="img/sprowl background.png">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">Sprowl</h3>
-                                    <p class="content-text">Description of Site</p>
+                                    
                                 </div>
                             </a>
                         </div>
@@ -135,12 +142,33 @@
                                 <div class="content-overlay"></div>
                                 <img class="content-image" src="img/aplusbackground.png">
                                 <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">A+ Blinds</h3>
-                                    <p class="content-text">Description of Site</p>
+                                    <h3 class="content-title">A+ Blinds</h3> 
                                 </div>
                             </a>
                         </div>
-                    </div>   
+                    </div> 
+                    <div class="col-md-6">
+                        <div class="content" style="margin-bottom:50px;">
+                            <a href="https://clevernest.com/" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/clevernest.png">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Clevernest</h3>  
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="col-md-6">
+                        <div class="content" style="margin-bottom:50px;">
+                            <a href="https://connorreporting.com/" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/connor.png">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Connor Reporting</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>     
                 </div>
             </div>
         </section>
@@ -161,7 +189,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <ul class="pull-right social-list">
+                            <ul >
                                 <li><a href="https://www.linkedin.com/in/verna-schwartz-486236139/"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="mailto:vernas._@hotmail.com"><i class="fas fa-envelope"></i></a></li>
                                 <li><a href="tel://(812)613-3530"><i class="fas fa-phone"></i></a></li>
@@ -177,6 +205,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
 
     </body>
 </html>
