@@ -40,12 +40,20 @@
       transition: .3s ease;
       color: white;
       padding: 20px 20px !important; }
-      
+
+
+@media screen and (max-width: 900px) {  
+  .navbar{
+    background-color: black;
+  } 
+  
+}
 .navbar-nav a:hover{
-  color:  darkgrey;
+  color:  white;
+ 
 }
 #hero {
-  height: 700px;
+  height: 80%;
   background-size: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,12 +72,21 @@
 
 #skills h2 {
   color: white;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 30px;
+  padding-top: 70px;
+   }
 #skills p {
   color: white;
   font-size: 25px;
-  padding-bottom: 20px; }
+  padding-bottom: 70px; }
+#mywork h2{
+  padding-bottom: 20px;
+}
+
+.social-list{
+  float:right;
+
+}
 
 #footer {
   color: white;
@@ -79,6 +96,8 @@
 #footer a{
   color: darkgray;
 }
+
+
 #footer a:hover{
   color: white;
 }
@@ -108,7 +127,9 @@ p {
 
 h2 {
   margin-bottom: 1.5rem; }
-
+  /*End Global*/
+  
+/*Overlay of My Work*/
   .content {
     position: relative;
     width: 90%;
@@ -179,7 +200,7 @@ h2 {
   .fadeIn-bottom{
     top: 80%;
   }
-
+/*End Overlay of My Work*/
 
 
 /*smooth scrolling*/
